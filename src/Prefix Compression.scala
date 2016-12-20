@@ -13,11 +13,13 @@ You are given two strings, and , representing the data, you need to find the lon
 [....]
 
 @URL: https://www.hackerrank.com/contests/lambda-calculi-oct14/challenges/prefix-compression
+
+@Courtesy: hackerrank
 */
 
-/*
-Basically we need to find the longest common prefix among given two strings.
-*/
+
+// Basically we need to find the longest common prefix among given two strings.
+
 
 object Main extends App {
 	
