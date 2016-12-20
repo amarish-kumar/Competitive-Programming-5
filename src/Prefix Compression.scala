@@ -9,7 +9,6 @@ Over a period of time you have observed a trend: most of the times both strings 
 You want to utilize this observation to design a data compression algorithm which will be used to reduce amount of data to be transferred.
 
 You are given two strings, and , representing the data, you need to find the longest common prefix () of the two strings. 
-Then you will send substring , and , where and are the substring left after stripping from them. 
 
 [....]
 
@@ -25,7 +24,7 @@ object Main extends App {
 	var words = List[String]() 
 	for(ln <- io.Source.stdin.getLines) words = ln :: words
 	
-	val prefix = words(0).zip(words(1)).takeWhile(t=> t._1== t._2).map(_._1).mkString
+	val prefix = words(0).zip(words(1)).takeWhile(t => t._1 == t._2).map(_._1).mkString
 
 	val prefixLength = prefix.length
 	val xd = words(1).substring(prefixLength)
