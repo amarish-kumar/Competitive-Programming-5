@@ -16,6 +16,10 @@ Then you will send substring , and , where and are the substring left after stri
 @URL: https://www.hackerrank.com/contests/lambda-calculi-oct14/challenges/prefix-compression
 */
 
+/*
+Basically we need to find the longest common prefix among given two strings.
+*/
+
 object Main extends App {
 	
 	var words = List[String]() 
