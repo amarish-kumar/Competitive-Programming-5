@@ -17,6 +17,7 @@ You need to print the sum of the elements in the array, keeping in mind that som
 
 // Calculating the Sum in functional style
 
+import collection.breakOut
 
 object Main extends App {
 	
@@ -27,4 +28,7 @@ object Main extends App {
 	println(lines.head.split(" ").map(_.toLong).sum)		
 	println(lines.head.split(" ").par.map(_.toLong).sum)	// Parallel Collection
 	
+	val convertedNums: List[Long]= (for (x <- lines.head.split(" ")) yield x.toLong)(breakOut)
+	println(convertedNums.sum)
+
 }
