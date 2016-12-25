@@ -30,10 +30,7 @@ object Main extends App {
 	var lines = List[String]()
 	for(ln <- scala.io.Source.stdin.getLines) lines = ln :: lines
 	
-	val T = lines.last
-				 .split(" ")
-				 .last
-				 .toInt
+	val T = lines.last.split(" ").last.toInt
 
 	lines.dropRight(1)
 		 .map(_.split(" "))
